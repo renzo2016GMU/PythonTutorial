@@ -1,6 +1,6 @@
 from werkzeug.security import safe_str_cmp
 
-from Version2.user import User
+from Version2.code.user import User
 
 users = [
     User(1, 'user1', 'abcxyz'),
