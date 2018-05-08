@@ -1,8 +1,8 @@
-from flask import Flask, request
+from flask import Flask
 from flask_restful import Resource, Api, reqparse
-from flask_jwt import JWT, jwt_required, current_identity
+from flask_jwt import JWT, jwt_required
 
-from Version2.security import authenticate, identity
+from Version2.code.security import authenticate, identity
 
 app = Flask(__name__)
 app.config['PROPAGATE_EXCEPTIONS'] = True  # To allow flask propagating exception even if debug is set to false on app
